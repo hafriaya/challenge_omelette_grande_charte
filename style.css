@@ -16,6 +16,7 @@ main{
     /* imported font  */
     font-family: 'YoungSerif-Regular' sans-serif;
     src: url(fonts/YoungSerif-Regular.ttf);
+    line-height: 1.6;
 
 }
 article{
@@ -26,6 +27,9 @@ article{
     text-align: center;
     border-radius: 20px;
     align-items: center;
+}
+h1{
+    font-size: 2rem;
 }
 .img_container{
     width: 90%;
@@ -42,7 +46,7 @@ article{
     margin: 40px;
     /* padding: auto 20px; */
 }
-.first_section{
+.first_section , .second_section{
     border-bottom: 1px solid rgb(202, 202, 202);
 }
 .pink_bg{
