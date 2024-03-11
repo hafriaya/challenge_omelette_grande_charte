@@ -1,62 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+main {
+  background-color: rgb(243, 229, 217);
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  /* align-items: center; */
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  /* imported font  */
+  font-family: "YoungSerif-Regular" sans-serif;
+  src: url(fonts/YoungSerif-Regular.ttf);
+  line-height: 1.7;
+}
+article {
+  background-color: #ffff;
+  margin: 200px auto;
+  padding: 30px;
+  width: 700px;
+  text-align: center;
+  border-radius: 20px;
+  align-items: center;
+}
+h1 {
+  font-size: 2rem;
+}
+.img_container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
+}
+.img_container img {
+  width: 100%;
+  border-radius: 10px;
+}
+.the_sections {
+  text-align: left;
+  margin: 40px;
+  /* padding: auto 20px; */
+}
+.first_section,
+.second_section {
+  border-bottom: 1px solid rgb(202, 202, 202);
+}
+.pink_bg {
+  background-color: rgb(255, 247, 252);
+  padding: 15px;
+  border-radius: 10px;
+}
+.pink_bg h3 {
+  color: rgb(100, 35, 70);
+}
+.the_sections h2 {
+  color: rgb(110, 50, 30);
+}
+/* new pseudo-element */
+ul li::marker,
+ol li::marker {
+  color: rgb(110, 50, 30);
+}
 
-body{
-    margin: 0;
-    padding: 0;
+.third_section table {
+  width: 100%;
+  border-collapse: collapse;
 }
-main{
-    background-color: rgb(243, 229, 217);
-    width: 100%;
-    min-height: 100vh;
-    text-align: center;
-    /* align-items: center; */
-    justify-content: center;
-    display: flex;
-    margin: 0 auto;
-    padding: 0;
-    /* imported font  */
-    font-family: 'YoungSerif-Regular' sans-serif;
-    src: url(fonts/YoungSerif-Regular.ttf);
-    line-height: 1.6;
-
+.third_section table tr {
+  border-bottom: 1px solid rgb(202, 202, 202);
 }
-article{
-    background-color: #ffff;
-    margin: 200px auto;
-    padding: 30px;
-    width: 700px;
-    text-align: center;
-    border-radius: 20px;
-    align-items: center;
+.third_section table th {
+  font-weight: normal;
+  color: rgb(103, 102, 102);
 }
-h1{
-    font-size: 2rem;
-}
-.img_container{
-    width: 90%;
-    margin:  auto ;
-    text-align: center;
-    border-radius: 10px;
-}
-.img_container img{
-    width: 100%;
-    border-radius: 10px;
-}
-.the_sections{
-    text-align: left;
-    margin: 40px;
-    /* padding: auto 20px; */
-}
-.first_section , .second_section{
-    border-bottom: 1px solid rgb(202, 202, 202);
-}
-.pink_bg{
-    background-color: rgb(255, 247, 252);
-    padding: 15px;
-    border-radius: 10px;
-}
-.pink_bg h3{
-    color: rgb(100, 35, 70);
-}
-.the_sections h2{
-color: rgb(110, 50, 30);
+.third_section table td{
+    font-weight: bold;
+    color: rgb(110, 50, 30);
 }
