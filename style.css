@@ -1,3 +1,4 @@
+
 body{
     margin: 0;
     padding: 0;
@@ -12,23 +13,46 @@ main{
     display: flex;
     margin: 0 auto;
     padding: 0;
+    /* imported font  */
+    font-family: 'YoungSerif-Regular' sans-serif;
+    src: url(fonts/YoungSerif-Regular.ttf);
 
 }
 article{
     background-color: #ffff;
     margin: 200px auto;
-    width: 500px;
+    padding: 30px;
+    width: 700px;
     text-align: center;
     border-radius: 20px;
     align-items: center;
 }
 .img_container{
-    width: 80%;
-    margin: 20px auto ;
+    width: 90%;
+    margin:  auto ;
     text-align: center;
     border-radius: 10px;
 }
 .img_container img{
     width: 100%;
     border-radius: 10px;
+}
+.the_sections{
+    text-align: left;
+    margin: 40px;
+    /* padding: auto 20px; */
+}
+.first_section{
+    border-bottom: 1px solid rgb(202, 202, 202);
+}
+.pink_bg{
+    background-color: rgb(255, 247, 252);
+    padding: 15px;
+    border-radius: 10px;
+}
+.pink_bg h3{
+    color: rgb(100, 35, 70);
+}
+.the_sections h2{
+color: rgb(110, 50, 30);
 }
