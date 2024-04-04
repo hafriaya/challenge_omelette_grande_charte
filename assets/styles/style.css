@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100%;
+}
+article {
+  background-color: #ffff;
+  /* font: 16px normal 400 hsl("Outfit", sans-serif); */
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-optical-sizing: auto;
+  color: hsl(30, 10%, 34%);
+  line-height: 1.5;
+}
+/* image */
+.img_container {
+  width: 100%;
+  text-align: center;
+}
+.img_container img {
+  width: 100%;
+}
+/* sections */
+.the_sections {
+  margin: 0 20px;
+}
+
+section:not(.third_section) {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+div:not(.the_sections),
+section {
+  
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+div:first-child {
+  margin-top: 0;
+}
+h1,
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.3;
+}
+.the_sections h1 {
+  font-size: 2.5rem;
+  color: hsl(24, 5%, 18%);
+  margin-top: 0;
+}
+.the_sections p {
+  margin: 20px 0;
+}
+.the_sections h2 {
+  color: hsl(14, 45%, 36%);
+  font-size: 1.9rem;
+}
+
+/* pink div */
+.pink_bg {
+  background-color: hsl(330, 100%, 98%);
+  padding: 10px 30px;
+  /* margin: 20px 0; */
+  border-radius: 10px;
+}
+.pink_bg h3 {
+  color: hsl(332, 51%, 32%);
+}
+
+/* list */
+ol,
+ul {
+  padding: 0 20px;
+}
+/* new pseudo-element */
+ul li::marker,
+ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+li {
+  list-style-position: outside;
+  padding: 5px 20px;
+}
+
+/* table */
+.third_section table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+.third_section table tr {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  height: 50px;
+}
+table tr:last-child {
+  border-bottom: none;
+}
+.third_section table th,
+.third_section table td {
+  padding: 0 35px;
+}
+.third_section table th {
+  font-weight: normal;
+}
+.third_section table td {
+  font-weight: bold;
+  color: hsl(14, 45%, 36%);
+}
+
+/* Media Queries */
+@media screen and (min-width: 700px) {
+  main {
+    background-color: hsl(30, 54%, 90%);
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+  }
+  article {
+    margin: 150px auto;
+    padding: 40px 20px 0 20px;
+    width: 700px;
+    text-align: center;
+    border-radius: 25px;
+    align-items: center;
+  }
+  .img_container {
+    width: 95%;
+    margin: auto;
+  }
+  .img_container img {
+    border-radius: 10px;
+  }
+  .the_sections {
+    text-align: left;
+  }
+  /* section,
+  div {
+    padding: 10px;
+  } */
+}
